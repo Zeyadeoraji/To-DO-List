@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: salmon;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  width: 50%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 9px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+.container h2 {
+  color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.container img {
+  width: 40px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 5);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  padding: 8px 2px;
+}
+.row input {
+  border: none;
+  outline: none;
+}
+.row .btn {
+  border: 0;
+  outline: o;
+  background: salmon;
+  padding: 7px 12px;
+  border-radius: 17px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.row .btn:hover {
+  background: rgb(237, 121, 108);
+}
+.list-Wraper {
+  width: 100%;
+
+  /* background-color: red; */
+}
+
+.list-Wraper ul {
+  list-style: none;
+}
+.list-Wraper ul li {
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 12px 8px 12px 50px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  text-transform: capitalize;
+  /* background: #fff; */
+}
+.list-Wraper ul li::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 9px;
+  left: 2px;
+  background-image: url(images/unchecked.png);
+}
+ul li .checked {
+  text-decoration: line-through;
+  color: #555;
+}
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+ul li {
+  position: relative;
+}
+ul li span {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blueviolet;
+}
+ul li span:hover {
+  background-color: #5555557b;
+  border-radius: 50%;
+}
